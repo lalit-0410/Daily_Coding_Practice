@@ -1,9 +1,6 @@
 package Pattern;
 
 public class CharcterPattern {
-    public static void main(String[] args) {
-        pattern(1);
-    }
     public static void pattern(int c){
         for(int line=1;line<=5;line++)
         {
@@ -15,4 +12,8 @@ public class CharcterPattern {
             System.out.println();
         }
     }
+    public static void main(String[] args) {
+        pattern(1);
+    }
+
 }

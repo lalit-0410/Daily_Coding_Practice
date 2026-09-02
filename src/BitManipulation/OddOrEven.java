@@ -1,22 +1,18 @@
 package BitManipulation;
 
 public class OddOrEven {
-    public static void oddEven(int n){
-        int bitmask=1; //0001
-
-        //5=101
-        //& 001
-        //  001 (LSB) ==1 then odd, 0 then even
-
-        if((n & bitmask)==0){
-            System.out.println("even number");
+    static void oddOrEven(int n){
+        int bitmask=1;
+        if((n&bitmask)==1){
+            System.out.println("Odd number");
         }
         else {
-            System.out.println("Odd number");
+            System.out.println("Even number");
         }
     }
     public static void main(String[] args) {
-        oddEven(4);
-        oddEven(7);
+        oddOrEven(5);
+        oddOrEven(154);
+        oddOrEven(124);
     }
 }
